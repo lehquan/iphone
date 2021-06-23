@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iPhone8</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="center">
+		<div class="mobile">
+			<div class="screen active">
+				<div class="status-bar">
+					<img class="signal" src="images/signal-50.png" alt="">
+					<img class="wifi" src="images/wifi-60.png" alt="">
+<!--					<p id="status-time">9:41 AM</p>-->
+					<img class="lock" src="images/lock-30.png" alt="">
+					<img class="bluetooth" src="images/bluetooth-50.png" alt="">
+					<p class="battery-p">100%</p>
+					<img class="battery" src="images/battery-50.png" alt="">
+				</div>
+			</div>
+			<div class="home"></div>
+			<div class="inner"></div>
+			<ul class="volumn">
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="silent">
+				<li></li>
+			</ul>
+			<ul class="sleep">
+				<li></li>
+			</ul>
+			<div class="footer">
+				<p>Press home to unlock</p>
+				<div id="dot-1"></div>
+				<div id="dot-2"></div>
+				<img id="dot-3" src="images/camera-30.png">
+			</div>
+		</div>
+	</div>
+
+	<script>
+        $(document).ready(function(){
+            $(".home").click(function(){
+                $(".screen").toggleClass('active');
+            });
+        });
+	</script>
+</body>
+</html>
